@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --blue: #3bba30;
+  --white: #ffffff; 
+}
+
+body {
+  background-color: var(--pink);
+}
+
+h2 {
+  border-bottom: 2px solid var(--pink);
+}
+
+.container {
+  --local-padding: 200px; /* Local scope variable */
+  --modify-colorvalue: #9f224c;
+  color: var(--modify-colorvalue);
+  background-color: var(--grey);
+  padding: var(--local-padding);
+}
+
+button {
+  background-color: var(--grey);
+  color: var(--blue);
+  border: 1px solid var(--green);
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Using the var() Function</h1>
+<h2>What is CSS Variables?</h2>
+<div class="container">
+  <h2>CSS Variables</h2>
+  <p>CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.</p>
+  <p>Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.  <p>
+    <button>Yes</button>
+    <button>No</button>
+  </p>
+</div>
+
+</body>
+</html>

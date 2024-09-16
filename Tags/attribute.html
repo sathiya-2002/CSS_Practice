@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Attributes</title>
+    <style>
+        .red-text {
+            color: green;
+        }
+        #main-heading{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- ID Attribute -->
+    <h1 id="main-heading" style="text-align:center">Main Heading</h1>
+    <!-- Description: The 'id' attribute is used to uniquely identify an element in the document. It is used for styling or JavaScript interactions. -->
+
+    <!-- Class Attribute -->
+    <p class="pink-text">This text is pink-text.</p>
+    <!-- Description: The 'class' attribute is used to assign one or more class names to an element, allowing multiple elements to share the same styling. -->
+
+    <!-- Style Attribute -->
+    <p style="font-size: 20px; color: yellowgreen;">This text is styled inline.</p>
+    <!-- Description: The 'style' attribute is used to apply inline CSS styles directly to an element. -->
+
+    <!-- Src and Alt Attributes -->
+    <img src="image.jpg" alt="Image Description" width="300" height="200">
+    <!-- Description: The 'src' attribute specifies the URL or path of an image, while the 'alt' attribute provides alternative text for accessibility if the image cannot be displayed. -->
+
+    <!-- Events Attributes -->
+    <button onclick="alert('Button clicked!')">Click Me</button>
+    <!-- Description: Events attributes like 'onclick', 'onmouseover', etc., are used to associate JavaScript code that runs when a specific event occurs on the element. In this example, an alert will appear when the button is clicked. -->
+
+    <!-- Form Attributes -->
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Description: Form attributes like 'action', 'method', and 'enctype' are used to define the behavior and characteristics of an HTML form. In this example, the form will be submitted to the "/submit" URL using the POST method, and it can handle file uploads. -->
+</body>
+</html>
+
+
+<!-- 
+id: Used to uniquely identify an element in the document for styling or JavaScript interactions.
+class: Used to assign one or more class names to elements for sharing styles among multiple elements.
+style: Used to apply inline CSS styles directly to an element.
+src and alt: src specifies the URL or path of an image, while alt provides alternative text for accessibility.
+width and height: Used to specify the width and height of an image, respectively.
+Events attributes (e.g., onclick): Used to associate JavaScript code that runs when a specific event occurs on the element.
+Form attributes (e.g., action, method, enctype): Used to define the behavior and characteristics of an HTML form for data submission.
+ -->
