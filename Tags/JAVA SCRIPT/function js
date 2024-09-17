@@ -1,0 +1,7 @@
+function rec_area(height,width)
+{
+    console.log(a,b);
+    return length * width;
+}
+var result = rec_area(3,4);
+console.log(result);
