@@ -1,33 +1,20 @@
-function calculator(num1, num2, operator)
- {
+function calculator(num1, num2, operator) {
     let result;
 
-    if (operator === '+')
-    {
+    if (operator === '+') {
         result = num1 + num2;
-    } 
-        else if (operator === '-') 
-    {
+    } else if (operator === '-') {
         result = num1 - num2;
-    }
-        else if (operator === '*')
-    {
+    } else if (operator === '*') {
         result = num1 * num2;
-    }
-        else if (operator === '/') 
-    {
-    if (num2 !== 0)
-    {  // Check for division by zero
-         result = num1 / num2;
-    }  
-        else 
-    {
-        console.log("Error: Division by zero is not allowed.");
-        return;
-    }
-    } 
-    else 
-    {
+    } else if (operator === '/') {
+        if (num2 !== 0) {  // Check for division by zero
+            result = num1 / num2;
+        } else {
+            console.log("Error: Division by zero is not allowed.");
+            return;
+        }
+    } else {
         console.log("Error: Invalid operator. Use +, -, *, or /.");
         return;
     }
