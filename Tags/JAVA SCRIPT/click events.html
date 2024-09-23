@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <h1>Good Moring</h1>
-    <button id="clickButton">Click Me</button>
-    <h3 id="h3Element">Click me to change font size</h3>
-    <h1 id="action">Actions</h1>
-    <button id="changeColorButton">Change color</button>
-    <button id="changeBgColorButton">Change BG color</button>
-    <p id="element">This is a sample text.</p>
-    <button id="changeStyleButton">Click to Change Style</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Name with Background Color</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif; 
+        }
+        #nameInput {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: darkblue; 
+            color: white; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    <h1 id="hello_clickevent">
-      Click the button to change my background color!
-    </h1>
-    <button id="hello_button">Click Me!</button>
-
+        button:hover {
+            background-color: navy;
+        }
+        
+        #displayArea {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: lightgreen; 
+            color: green;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
     <script>
-      const button_ = document.getElementById("hello_button");
-      const h1 = document.querySelector("#hello_clickevent");
+        function displayName()
+        {
 
-      button_.addEventListener("click", () => {
-        h1.style.backgroundColor = "Green";
-      });
+            let name = document.getElementById('nameInput').value;
+            
+            document.getElementById('displayArea').innerText = name ;
+        }
     </script>
-  </body>
+</head>
+<body>
+
+    <h2>Enter your name:</h2>
+
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    
+    <button onclick="displayName()">Submit</button>
+    
+    <h3 id="displayArea"></h3>
+
+</body>
 </html>
