@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Good Moring</h1>
+    <button id="clickButton">Click Me</button>
+    <h3 id="h3Element">Click me to change font size</h3>
+    <h1 id="action">Actions</h1>
+    <button id="changeColorButton">Change color</button>
+    <button id="changeBgColorButton">Change BG color</button>
+    <p id="element">This is a sample text.</p>
+    <button id="changeStyleButton">Click to Change Style</button>
+
+    <h1 id="hello_clickevent">
+      Click the button to change my background color!
+    </h1>
+    <button id="hello_button">Click Me!</button>
+
+    <script>
+      const button_ = document.getElementById("hello_button");
+      const h1 = document.querySelector("#hello_clickevent");
+
+      button_.addEventListener("click", () => {
+        h1.style.backgroundColor = "Green";
+      });
+    </script>
+  </body>
+</html>
