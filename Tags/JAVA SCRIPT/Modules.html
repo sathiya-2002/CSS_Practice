@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="module" src="module2.js"></script>
+
+    export const myFunction = () => {
+        console.log("This is a function from module1.js");
+      };
+      
+      export const myVariable = 42;
+    
+
+      // module2.js
+import { myFunction, myVariable } from "./Module1.js";
+
+myFunction();
+console.log(`myVariable: ${myVariable}`);
+
+
+  </body>
+</html>
