@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: 'Arial', sans-serif;
+}
+
+.social-container {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Base style for all social buttons */
+.social-btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Icon styling */
+.social-btn i {
+    z-index: 2;
+}
+
+/* Hover effects */
+.social-btn:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.social-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.social-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Background expands on hover */
+}
+
+/* Facebook */
+.facebook {
+    background-color: #3b5998;
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+/* Twitter */
+.twitter {
+    background-color: #1da1f2;
+}
+
+.twitter:hover {
+    background-color: #1991db;
+}
+
+/* Instagram */
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #e6683c, #dc2743, #cc2366, #bc1888, #f09433);
+}
+
+/* LinkedIn */
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin:hover {
+    background-color: #005983;
+}

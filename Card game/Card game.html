@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Card Game</h1>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="card-back.png" alt="Card Back">
+                </div>
+                <div class="card-back">
+                    <img src="card-front.png" alt="Card Front">
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="card-back.png" alt="Card Back">
+                </div>
+                <div class="card-back">
+                    <img src="card-front.png" alt="Card Front">
+                </div>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
