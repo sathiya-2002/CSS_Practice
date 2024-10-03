@@ -1,0 +1,42 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: 'Arial', sans-serif;
+}
+
+.text-container {
+    text-align: center;
+}
+
+/* Simple Text Animation */
+.animated-text {
+    font-size: 48px;
+    color: #fff;
+    animation: fadeIn 3s ease-in-out infinite;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}

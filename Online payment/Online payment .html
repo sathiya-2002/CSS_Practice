@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Payment UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Payment Form -->
+        <div class="payment-form">
+            <h2>Online Payment</h2>
+
+            <form action="#">
+                <!-- Cardholder Name -->
+                <div class="input-group">
+                    <label for="cardholder-name">Cardholder Name</label>
+                    <input type="text" id="cardholder-name" placeholder="John Doe" required>
+                </div>
+
+                <!-- Card Number -->
+                <div class="input-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" maxlength="16" placeholder="1234 5678 9012 3456" required>
+                </div>
+
+                <!-- Expiry Date -->
+                <div class="input-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="month" id="expiry-date" required>
+                </div>
+
+                <!-- CVV -->
+                <div class="input-group">
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" maxlength="3" placeholder="123" required>
+                </div>
+
+                <!-- Pay Button -->
+                <div class="input-group">
+                    <button type="submit" class="pay-btn">Pay Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
